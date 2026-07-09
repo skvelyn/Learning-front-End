@@ -1,0 +1,87 @@
+@import url('https://fonts.google.com/specimen/Inter');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color:#030616;
+    line-height: 1.6;
+}
+header{
+    text-align: center;
+    padding:60px 200px ;
+    background-color: #FFFFFF;
+}
+Header h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+Header p {
+    font-size: 1rem;
+    font-weight:400 ;
+}
+main {
+    background-color:#F8FAFC ;
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+section {
+    max-width: 650px;
+    margin: 0 auto;
+}
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+section p{
+   font-size: 1rem;
+   font-weight: 400;
+   margin-bottom: 16px;
+}
+section ol, section ul{
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+section li{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+section a{
+    color: #4E80EE;
+    text-decoration: none;     /* Menghapus garis bawah bawaan pada link */
+}
+section a:hover{
+    text-decoration: underline;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #D2D5DA;  /* Abu-abu pembatas sesuai design system */
+    max-width: 650px;
+    margin: 40px auto;          /* Jarak 40px di atas dan bawah garis */
+}
+@media (max-width: 768px) /*hanya akan aktif jika website Anda dibuka di perangkat yang layarnya lebih kecil dari 768*/
+{
+    header {
+        padding: 40px 16px;     /* Mengurangi jarak atas-bawah di layar kecil */
+    }
+
+    header h1 {
+        font-size: 1.75rem;     /* Mengecilkan judul utama di HP agar tidak terlalu besar */
+    }
+
+    main {
+        padding: 40px 16px;     /* Mengurangi ruang kosong di kanan-kiri layar HP */
+    }
+
+    section h2 {
+        font-size: 1.25rem;     /* Mengecilkan judul pertanyaan di layar HP */
+    }
+}
